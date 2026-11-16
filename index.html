@@ -14,28 +14,46 @@
         main: {
           title: 'Main View',
           cssClass: ['main'],
-          buttons: {
-            label: 'Example',
-            cssClass: ['button'],
-            actionText: 'Example'
-          }
+          buttons: [
+            {
+              label: 'Example',
+              cssClass: ['button'],
+              actionText: 'Example'
+            }
+          ]
         }
       };
+    };
+
+    const addButtons = (buttons, section) => {
+      buttons.forEach( element => {
+        let button = document.createElement('button');
+        button.innerHTML = element.label;
+
+        section.appendChild(button);
+      });
+
     };
 
     const loadView = view => {
       const mainSection = document.getElementById('main');
       const app = new App();
+      const appView = app.views[view];
+      const title = document.createElement('h1');
+      const buttonWrapper = document.createElement('div');
 
       mainSection.innerHTML = '';
       mainSection.classList = '';
 
-      const title = document.createElement('h1');
-      title.innerText = app.views[view].title;
+      appView.cssClass.forEach( css => mainSection.classList.add(css) );
 
+      title.innerText = appView.title;
       mainSection.appendChild(title);
-      app.views[view].cssClass.forEach( css => mainSection.classList.add(css) );
-    }
+
+      buttonWrapper.classList.add('button-wrapper');
+      mainSection.appendChild(buttonWrapper);
+      appView.buttons && addButtons(appView.buttons, buttonWrapper);
+    };
 
     loadView('main');
   </script>
