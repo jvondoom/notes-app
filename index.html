@@ -13,13 +13,18 @@
       views = {
         main: {
           title: 'Main View',
-          cssClass: ['main']
+          cssClass: ['main'],
+          buttons: {
+            label: 'Example',
+            cssClass: ['button'],
+            actionText: 'Example'
+          }
         }
       };
     };
 
     const loadView = view => {
-      const mainSection = document.getElementById('main');
+      const mainSection = document.getElementById(view);
       const app = new App();
 
       mainSection.innerHTML = '';
