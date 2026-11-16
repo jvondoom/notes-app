@@ -3,8 +3,8 @@
 ## Purpose
 This is the log of the decision making during the development of this app.
 
-## Metodology
-This document will follow the Quaestio structure taken from the Summa Theologiae of Thomas Aquinas, which can be structured the following way:
+## Methodology
+This document will follow the Quaestio structure taken from the Summa Theologiae of Thomas Aquinas, which is build in the following way:
 - **Date - Question**
 - **Objections**
 - **Sed contra** (counter-statement)
