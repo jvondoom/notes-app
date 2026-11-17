@@ -12,6 +12,16 @@ This document will follow the Quaestio structure taken from the Summa Theologiae
 
 ## Dev Log
 
+### Why using a single file instead of separating the UI, the code, and the styles?
+**Objections**
+- Best practices recommend to keep a file for the UI, another for the styles, and a separated one for the functionality.
+
+**Sed Contra**
+- Even though following the best practices is the default recommendation, every single project is unique and the requirements dictate if is valid to make an exception of the best practices
+
+**Answer**
+The original solution his application resolved does not had a regular deployment environment where a regular solution could be executed, therefore this app required to be created in a single HTML file.
+
 ### 11/16/2026 - Should the buttons be wrapped in a div?
 **Objections**
 - Extra div elements should not be used.
