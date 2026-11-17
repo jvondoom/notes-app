@@ -5,10 +5,18 @@ This is the log of the decision making during the development of this app.
 
 ## Methodology
 This document will follow the Quaestio structure taken from the Summa Theologiae of Thomas Aquinas, which is build in the following way:
-- **Date - Question**
-- **Objections**
-- **Sed contra** (counter-statement)
-- **Answer**
+### **Date - Question**
+
+**Objections**
+- Example of a point
+
+**Sed contra** (counter-statement)
+- Example of a counter-statement for the previous point
+
+**Answer**
+Considering the objections and the counter-statements, we provide an answer to the Quaestio bringed.
+
+---
 
 ## Dev Log
 
@@ -21,6 +29,8 @@ This document will follow the Quaestio structure taken from the Summa Theologiae
 
 **Answer**
 The original solution his application resolved does not had a regular deployment environment where a regular solution could be executed, therefore this app required to be created in a single HTML file.
+
+---
 
 ### 11/16/2026 - Should the buttons be wrapped in a div?
 **Objections**
